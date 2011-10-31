@@ -1,0 +1,45 @@
+---
+Integration Tests:
+  :original_result:
+    /foo/bar.rb:
+    - 0
+    - 1
+    - !!null 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 1
+    - !!null 
+    - !!null 
+    - 0
+    - !!null 
+    - !!null 
+    - 1
+    - 0
+    - !!null 
+    - !!null 
+    /foo/baz.rb:
+    - 0
+! '/usr/lib/ruby/gems/1.9.1/gems/rake-0.9.2/lib/rake/rake_test_loader.rb ':
+  :original_result:
+    /foo/bar.rb:
+    - 1
+    - 0
+    - !!null 
+    - 1
+    - 0
+    - 0
+    - 0
+    - 0
+    - !!null 
+    - !!null 
+    - 0
+    - !!null 
+    - !!null 
+    - 1
+    - 0
+    - !!null 
+    - !!null 
+    /foo/quux.rb:
+    - 0
