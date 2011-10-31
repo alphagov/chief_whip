@@ -13,7 +13,7 @@ module ChiefWhip
           file = {}
         when %r{^index|^---}
           # re
-        when %r{\+\+\+ [^/]+/(.*)}
+        when %r{\+\+\+ [^/]+(/.*)}
           files[$1] = file
         when %r{^@@ -\d+,\d+ \+(\d+),\d+}
           offset = $1.to_i

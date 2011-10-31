@@ -10,7 +10,7 @@ module ChiefWhip
 
     def test_should_extract_filenames
       files = @parser.parse
-      assert_equal %w[ foo/bar.txt foo/baz.txt ], files.keys.sort
+      assert_equal %w[ /foo/bar.txt /foo/baz.txt ], files.keys.sort
     end
 
     def test_should_extract_one_set_of_lines
@@ -18,7 +18,7 @@ module ChiefWhip
       expected = {
         21 => "    NEWLINE21"
       }
-      assert_equal expected, files["foo/baz.txt"]
+      assert_equal expected, files["/foo/baz.txt"]
     end
 
     def test_should_extract_multiple_sets_of_lines
@@ -29,7 +29,7 @@ module ChiefWhip
           9 => "NEWLINE11",
         217 => "    NEWLINE202"
       }
-      assert_equal expected, files["foo/bar.txt"]
+      assert_equal expected, files["/foo/bar.txt"]
     end
   end
 end
