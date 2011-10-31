@@ -14,24 +14,24 @@ module ChiefWhip
       assert_equal %w[ /foo/bar.rb /foo/baz.rb /foo/quux.rb ], files.keys.sort
     end
 
-    def test_should_include_lines_with_no_coverage_in_any_run
+    def test_should_not_include_lines_with_no_coverage_in_any_run
       lines = @parser.parse["/foo/bar.rb"]
-      assert lines.include?(5), lines
+      assert !lines.include?(5), lines
     end
 
-    def test_should_not_include_lines_with_coverage_in_only_one_run
+    def test_should_include_lines_with_coverage_in_only_one_run
       lines = @parser.parse["/foo/bar.rb"]
-      assert !lines.include?(1), lines
+      assert lines.include?(1), lines
     end
 
-    def test_should_not_include_lines_with_coverage_in_more_than_one_run
+    def test_should_include_lines_with_coverage_in_more_than_one_run
       lines = @parser.parse["/foo/bar.rb"]
-      assert !lines.include?(4), lines
+      assert lines.include?(4), lines
     end
 
-    def test_should_not_include_boring_lines
+    def test_should_include_boring_lines
       lines = @parser.parse["/foo/bar.rb"]
-      assert !lines.include?(3), lines
+      assert lines.include?(3), lines
     end
 
     def test_should_include_lines_in_only_one_file
