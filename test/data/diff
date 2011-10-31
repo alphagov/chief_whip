@@ -1,0 +1,44 @@
+diff --git a/foo/bar.txt b/foo/bar.txt
+index 02fb673..5cd2436 100644
+--- a/foo/bar.txt
++++ b/foo/bar.txt
+@@ -1,14 +1,12 @@
+ LINE01
+   LINE02
+     LINE03
+-    LINE04
+-  LINE05
+-  LINE06
+-    LINE07
++    NEWLINE04
++    NEWLINE05
+   LINE08
+ LINE09
+ LINE10
+-LINE11
++NEWLINE11
+ LINE12
+ LINE13
+   LINE14
+@@ -199,7 +214,7 @@
+     LINE199
+     LINE200
+       LINE201
+-    LINE202
++    NEWLINE202
+       LINE203
+       LINE204
+     LINE205
+diff --git a/foo/baz.txt b/foo/baz.txt
+index 67f94b9..2bb3978 100644
+--- a/foo/baz.txt
++++ b/foo/baz.txt
+@@ -18,7 +18,7 @@ module MODULENAME
+     LINE18
+     LINE19
+     LINE20
+-    LINE21
++    NEWLINE21
+ LINE22
+     LINE32
+       LINE24
