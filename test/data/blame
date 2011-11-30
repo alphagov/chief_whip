@@ -1,0 +1,6 @@
+abcd0001 (Alice 2011-10-31 16:42:54 +0000  1) module M
+abcd0002 (Bob Bob 2011-10-31 16:42:55 +0000  2)   class C
+abcd0003 (Charlie 2011-10-31 16:42:56 +0000  3)     def initialize
+abcd0003 (Charlie 2011-10-31 16:42:56 +0000  5)     end
+abcd0003 (Charlie 2011-10-31 16:42:56 +0000  6)   end 
+abcd0003 (Charlie 2011-10-31 16:42:56 +0000  7) end
